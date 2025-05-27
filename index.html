@@ -63,11 +63,11 @@
       resultContainer.appendChild(resultDiv);
 
       setTimeout(() => {
-        const isValid = Math.random() > 0.5; // ランダムにリンクの有効/無効を判定 (50%の確率)
+        const isValid = Math.random() > 0.5;
         resultDiv.innerText = `リンク "${linkInput}" のチェック結果: `;
         resultDiv.classList.add(isValid ? "success" : "fail");
         resultDiv.innerText += isValid ? "有効です！" : "無効です！";
-      }, 10000); // 10秒後に結果を表示
+      }, 10000);
     }
   </script>
 
